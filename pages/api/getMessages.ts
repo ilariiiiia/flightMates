@@ -27,13 +27,13 @@ export default async function handler(
   res: NextApiResponse<Message[]>
 ) {
 	try {
-		let { num } = req.query;
+		let { num } = req.body;
 		try {
-			const jsonDirectory = path.join(process.cwd(), `data/${num}`);
+			const jsonDirectory = path.join(process.cwd(), `data/${num}.json`);
 			const fileContents = await fs.readFile(jsonDirectory, 'utf8');
 			res.status(200).json(JSON.parse(fileContents));
 		} catch (err) {
-			res.status(400).end("Flight number does not exist!");
+			res.status(400).end(`Flight number does not exist! Number entered: ${num}`);
 			return;
 		}
 	} catch (error) {
