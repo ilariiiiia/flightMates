@@ -1,16 +1,23 @@
-html,
+:root {
+	--light: #FFF;
+	--dark: #333;
+	--maxBodyWidth: 800px;
+}
+
+html, body {
+	background: linear-gradient(to left, #b85c01, #fc9d00, #b85c01);
+	color: var(--dark);
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	font-size: 18px;
+	line-height: 1.6;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+body > div {
+	height: 100%;
 }

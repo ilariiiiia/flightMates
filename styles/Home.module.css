@@ -1,0 +1,27 @@
+.bigImg {
+	height: 500px;
+	width: auto;
+	max-width: 100%;
+	text-align: center;
+	background: url("../public/plane_landing.webp");
+}
+
+.bigImg h1{
+	margin-top: 0;
+}
+
+.bigImgInput {
+	text-align: center;
+	font-size: 25px;
+	padding: 0px 30px;
+	height: 50px;
+	width: calc(80%-30px);
+	border-radius: 25px;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.bigImgSubmit {
+	height: 50px;
+	width: 50px;
+	margin-left: 15px;
+}

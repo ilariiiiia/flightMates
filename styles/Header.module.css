@@ -1,7 +1,14 @@
 .header {
-	background: black;
+	width: 100%;
+	background: linear-gradient(to left, #b85c01, #fc9d00, #b85c01);
+	color: white;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: space-around;
+}
+
+.header *:hover {
+	color: white;
+	text-shadow: 0px 0px 5px rgba(255,255,255,0.7);
 }
